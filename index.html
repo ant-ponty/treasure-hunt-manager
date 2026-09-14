@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treasure Hunt Manager</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav id="main-nav">
+  <h1>🗝️ Treasure Hunt Manager</h1>
+  <div class="nav-links">
+    <button data-view="dashboard" class="nav-btn active">Dashboard</button>
+    <button data-view="editor" class="nav-btn">Percorsi/Stanze/Enigmi/Oggetti</button>
+    <button data-view="links" class="nav-btn">Collegamenti</button>
+    <button data-view="flow" class="nav-btn">Diagramma di Flusso</button>
+    <button data-view="map" class="nav-btn">Mappa Stanze</button>
+  </div>
+  <div class="nav-actions">
+    <button id="btn-export">Esporta JSON</button>
+    <button id="btn-import">Importa JSON</button>
+    <input type="file" id="file-import" accept=".json" hidden>
+  </div>
+</nav>
+
+<main id="app-root"></main>
+
+<script src="js/store.js"></script>
+<script src="js/views/dashboard.js"></script>
+<script src="js/views/editor.js"></script>
+<script src="js/views/links.js"></script>
+<script src="js/views/flow.js"></script>
+<script src="js/views/map.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
